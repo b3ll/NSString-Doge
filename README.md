@@ -4,8 +4,10 @@ NSString-Doge
 Very Category
 
 ````
-  2014-06-18 23:34:36.028 NSDogeString[96414:303] much NSString. wow.
-  2014-06-18 23:34:36.028 NSDogeString[96414:303] so 2014-06-19 06:34:36 +0000.
+  2014-06-19 17:53:05.139 NSDogeString[5249:211659] much NSString. wow.
+  2014-06-19 17:53:05.140 NSDogeString[5249:211659] many 2014-06-19 15:53:05 +0000. wow.
+  2014-06-19 17:53:05.140 NSDogeString[5249:211659] such swizzled description. wow.
+
   Program ended with exit code: 0
 ````
 
