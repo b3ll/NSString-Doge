@@ -18,6 +18,7 @@ int main(int argc, const char * argv[]) {
 
     NSLog(@"%@", manyString);
     NSLog(@"%@", suchDescription);
+    NSLog(@"%@", @"swizzled description");
   }
   return 0;
 }
