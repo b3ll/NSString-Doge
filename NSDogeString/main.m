@@ -8,10 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
+#import "NSString+Doge.h"
+
 int main(int argc, const char * argv[]) {
   @autoreleasepool {
-      // insert code here...
-      NSLog(@"Hello, World!");
+    NSString *manyString = [[NSString stringWithFormat:@"NSString"] dogeString];
+
+    NSString *suchDescription = [[[NSDate date] description] dogeString];
+
+    NSLog(@"%@", manyString);
+    NSLog(@"%@", suchDescription);
   }
-    return 0;
+  return 0;
 }

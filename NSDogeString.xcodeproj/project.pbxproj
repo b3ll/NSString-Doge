@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0B86CBE71952B99E000D9CEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B86CBE61952B99E000D9CEC /* main.m */; };
+		0B86CBEE1952B9B1000D9CEC /* NSString+Doge.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B86CBED1952B9B1000D9CEC /* NSString+Doge.m */; };
+		0B86CBF11952B9EA000D9CEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B86CBF01952B9EA000D9CEC /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,9 @@
 /* Begin PBXFileReference section */
 		0B86CBE31952B99E000D9CEC /* NSDogeString */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NSDogeString; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B86CBE61952B99E000D9CEC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0B86CBED1952B9B1000D9CEC /* NSString+Doge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Doge.m"; sourceTree = "<group>"; };
+		0B86CBEF1952B9C3000D9CEC /* NSString+Doge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Doge.h"; sourceTree = "<group>"; };
+		0B86CBF01952B9EA000D9CEC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B86CBF11952B9EA000D9CEC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +48,7 @@
 			isa = PBXGroup;
 			children = (
 				0B86CBE51952B99E000D9CEC /* NSDogeString */,
+				0B86CBF21952B9FC000D9CEC /* Frameworks */,
 				0B86CBE41952B99E000D9CEC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,7 +65,18 @@
 			isa = PBXGroup;
 			children = (
 				0B86CBE61952B99E000D9CEC /* main.m */,
+				0B86CBEF1952B9C3000D9CEC /* NSString+Doge.h */,
+				0B86CBED1952B9B1000D9CEC /* NSString+Doge.m */,
 			);
+			path = NSDogeString;
+			sourceTree = "<group>";
+		};
+		0B86CBF21952B9FC000D9CEC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B86CBF01952B9EA000D9CEC /* Foundation.framework */,
+			);
+			name = Frameworks;
 			path = NSDogeString;
 			sourceTree = "<group>";
 		};
@@ -118,6 +136,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B86CBEE1952B9B1000D9CEC /* NSString+Doge.m in Sources */,
 				0B86CBE71952B99E000D9CEC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -202,6 +221,7 @@
 		0B86CBEB1952B99E000D9CEC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -209,6 +229,7 @@
 		0B86CBEC1952B99E000D9CEC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
